@@ -1,0 +1,16 @@
+Name,Age,Gender,City,Marks,Attendance,Department
+Aarav,20.0,Male,Ahmedabad,85.0,90.0,ICT
+Diya,21.0,Female,Mumbai,92.0,,CSE
+Rohan,,Male,Delhi,,82.0,ICT
+Anaya,19.0,Female,,78.0,95.0,ECE
+Vivaan,22.0,,Pune,88.0,88.0,
+Isha,20.0,Female,Surat,95.0,92.0,CSE
+Arjun,21.0,Male,Vadodara,,,ICT
+Meera,,Female,Rajkot,81.0,85.0,ECE
+Kabir,23.0,Male,Ahmedabad,76.0,79.0,CSE
+Sanya,19.0,,,89.0,91.0,ICT
+Aditya,20.0,Male,Delhi,91.0,94.0,ECE
+Riya,22.0,Female,Mumbai,,87.0,
+Karan,,Male,Pune,84.0,83.0,CSE
+Nisha,21.0,Female,Surat,73.0,,ICT
+Rahul,20.0,Male,Vadodara,87.0,89.0,ECE
