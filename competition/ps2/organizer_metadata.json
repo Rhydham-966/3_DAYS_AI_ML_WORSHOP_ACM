@@ -1,0 +1,725 @@
+{
+    "seed": 42,
+    "planted_invalid": [
+        {
+            "row_id": 493,
+            "column": "trip_distance_km",
+            "orig": 19.23,
+            "planted": -5.0,
+            "rule": "Must be > 0 and <= 50",
+            "treatment": "Remove or Correct"
+        },
+        {
+            "row_id": 378,
+            "column": "trip_distance_km",
+            "orig": 12.28,
+            "planted": -5.0,
+            "rule": "Must be > 0 and <= 50",
+            "treatment": "Remove or Correct"
+        },
+        {
+            "row_id": 802,
+            "column": "trip_distance_km",
+            "orig": 14.15,
+            "planted": -5.0,
+            "rule": "Must be > 0 and <= 50",
+            "treatment": "Remove or Correct"
+        },
+        {
+            "row_id": 533,
+            "column": "trip_distance_km",
+            "orig": 17.4,
+            "planted": -5.0,
+            "rule": "Must be > 0 and <= 50",
+            "treatment": "Remove or Correct"
+        },
+        {
+            "row_id": 404,
+            "column": "trip_distance_km",
+            "orig": 23.69,
+            "planted": -5.0,
+            "rule": "Must be > 0 and <= 50",
+            "treatment": "Remove or Correct"
+        },
+        {
+            "row_id": 336,
+            "column": "trip_duration_min",
+            "orig": 47.8,
+            "planted": 300.0,
+            "rule": "Must be <= 240",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 197,
+            "column": "trip_duration_min",
+            "orig": 37.6,
+            "planted": 300.0,
+            "rule": "Must be <= 240",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 507,
+            "column": "trip_duration_min",
+            "orig": 74.0,
+            "planted": 300.0,
+            "rule": "Must be <= 240",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 708,
+            "column": "trip_duration_min",
+            "orig": 73.9,
+            "planted": 300.0,
+            "rule": "Must be <= 240",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 954,
+            "column": "trip_duration_min",
+            "orig": 93.8,
+            "planted": 300.0,
+            "rule": "Must be <= 240",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 605,
+            "column": "travel_cost_inr",
+            "orig": 57.45,
+            "planted": -100.0,
+            "rule": "Must be >= 0",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 155,
+            "column": "travel_cost_inr",
+            "orig": 265.92,
+            "planted": -100.0,
+            "rule": "Must be >= 0",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 99,
+            "column": "travel_cost_inr",
+            "orig": 30.82,
+            "planted": -100.0,
+            "rule": "Must be >= 0",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 788,
+            "column": "travel_cost_inr",
+            "orig": 28.76,
+            "planted": -100.0,
+            "rule": "Must be >= 0",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 326,
+            "column": "travel_cost_inr",
+            "orig": 32.77,
+            "planted": -100.0,
+            "rule": "Must be >= 0",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 994,
+            "column": "walking_distance_m",
+            "orig": 17.7,
+            "planted": 15000.0,
+            "rule": "Must be <= 10000",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 870,
+            "column": "walking_distance_m",
+            "orig": 34.1,
+            "planted": 15000.0,
+            "rule": "Must be <= 10000",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 34,
+            "column": "walking_distance_m",
+            "orig": 150.9,
+            "planted": 15000.0,
+            "rule": "Must be <= 10000",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 385,
+            "column": "walking_distance_m",
+            "orig": 21.6,
+            "planted": 15000.0,
+            "rule": "Must be <= 10000",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 350,
+            "column": "walking_distance_m",
+            "orig": 65.4,
+            "planted": 15000.0,
+            "rule": "Must be <= 10000",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 427,
+            "column": "departure_hour",
+            "orig": 17,
+            "planted": 25,
+            "rule": "Must be 0-23",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 16,
+            "column": "departure_hour",
+            "orig": 11,
+            "planted": 25,
+            "rule": "Must be 0-23",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 322,
+            "column": "departure_hour",
+            "orig": 11,
+            "planted": 25,
+            "rule": "Must be 0-23",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 891,
+            "column": "departure_hour",
+            "orig": 13,
+            "planted": 25,
+            "rule": "Must be 0-23",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 938,
+            "column": "departure_hour",
+            "orig": 7,
+            "planted": 25,
+            "rule": "Must be 0-23",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 314,
+            "column": "traffic_level",
+            "orig": 1,
+            "planted": 5,
+            "rule": "Must be 1, 2, or 3",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 778,
+            "column": "traffic_level",
+            "orig": 3,
+            "planted": 5,
+            "rule": "Must be 1, 2, or 3",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 691,
+            "column": "traffic_level",
+            "orig": 1,
+            "planted": 5,
+            "rule": "Must be 1, 2, or 3",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 622,
+            "column": "traffic_level",
+            "orig": 1,
+            "planted": 5,
+            "rule": "Must be 1, 2, or 3",
+            "treatment": "Remove"
+        },
+        {
+            "row_id": 682,
+            "column": "traffic_level",
+            "orig": 2,
+            "planted": 5,
+            "rule": "Must be 1, 2, or 3",
+            "treatment": "Remove"
+        }
+    ],
+    "legitimate_extremes": [
+        {
+            "row_id": 483,
+            "reason": "VALID - Long distance"
+        },
+        {
+            "row_id": 642,
+            "reason": "VALID - Long distance"
+        },
+        {
+            "row_id": 181,
+            "reason": "VALID - Long distance"
+        },
+        {
+            "row_id": 117,
+            "reason": "VALID - Long distance"
+        },
+        {
+            "row_id": 108,
+            "reason": "VALID - High cost"
+        },
+        {
+            "row_id": 618,
+            "reason": "VALID - High cost"
+        },
+        {
+            "row_id": 536,
+            "reason": "VALID - High cost"
+        },
+        {
+            "row_id": 87,
+            "reason": "VALID - High cost"
+        },
+        {
+            "row_id": 216,
+            "reason": "VALID - Long walk"
+        },
+        {
+            "row_id": 226,
+            "reason": "VALID - Long walk"
+        },
+        {
+            "row_id": 319,
+            "reason": "VALID - Long walk"
+        },
+        {
+            "row_id": 808,
+            "reason": "VALID - Long walk"
+        },
+        {
+            "row_id": 786,
+            "reason": "VALID - Long duration"
+        },
+        {
+            "row_id": 608,
+            "reason": "VALID - Long duration"
+        },
+        {
+            "row_id": 417,
+            "reason": "VALID - Long duration"
+        }
+    ],
+    "missing_values": [
+        {
+            "row_id": 448,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 202,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 945,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 834,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 549,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 627,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 152,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 494,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 986,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 243,
+            "column": "trip_distance_km, trip_distance_miles",
+            "group": "A",
+            "treatment": "Row removal"
+        },
+        {
+            "row_id": 617,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 987,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 215,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 738,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 11,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 715,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 932,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 84,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 92,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 77,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 271,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 72,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 134,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 481,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 69,
+            "column": "travel_cost_inr",
+            "group": "B",
+            "treatment": "Median imputation"
+        },
+        {
+            "row_id": 221,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 779,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 27,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 406,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 651,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 105,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 138,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 379,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 204,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 300,
+            "column": "departure_hour",
+            "group": "B",
+            "treatment": "Mode imputation"
+        },
+        {
+            "row_id": 878,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 909,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 492,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 924,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 959,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 158,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 205,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 713,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 6,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 794,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 391,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 620,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 471,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 61,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 227,
+            "column": "trip_duration_min",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 535,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 321,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 810,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 993,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 213,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 781,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 333,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 675,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 223,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 48,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 233,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 806,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 771,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 555,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        },
+        {
+            "row_id": 51,
+            "column": "walking_distance_m",
+            "group": "C",
+            "treatment": "Mean imputation"
+        }
+    ],
+    "exact_duplicates": [
+        {
+            "source_trip_id": 868,
+            "overwritten_index": 341
+        },
+        {
+            "source_trip_id": 561,
+            "overwritten_index": 298
+        },
+        {
+            "source_trip_id": 278,
+            "overwritten_index": 101
+        },
+        {
+            "source_trip_id": 313,
+            "overwritten_index": 537
+        },
+        {
+            "source_trip_id": 491,
+            "overwritten_index": 452
+        },
+        {
+            "source_trip_id": 506,
+            "overwritten_index": 711
+        }
+    ]
+}

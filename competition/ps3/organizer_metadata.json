@@ -1,0 +1,1095 @@
+{
+    "DO_NOT_DISTRIBUTE": "This file contains private ground truth and planted data records. Do not distribute to participants.",
+    "generation_settings": {
+        "random_seed": 42,
+        "n_rows": 1000
+    },
+    "hidden_segments": {
+        "description": "Hidden synthetic segment identities for evaluation only. 0: Casual, 1: Frequent, 2: Genre explorers, 3: Comfort rewatchers",
+        "counts": {
+            "0": 319,
+            "1": 184,
+            "2": 254,
+            "3": 243
+        }
+    },
+    "missing_data": {
+        "total_missing_cells": 90,
+        "details": [
+            {
+                "row_id": 806,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 806,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 825,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 825,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 466,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 466,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 957,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 957,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 284,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 284,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 714,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 714,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 149,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 149,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 499,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 499,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 733,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 733,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 53,
+                "column": "movies_watched_monthly",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 53,
+                "column": "monthly_streaming_hours",
+                "group": "Row-removal candidates",
+                "recommended_treatment": "Remove row"
+            },
+            {
+                "row_id": 120,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 84,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 450,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 468,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 282,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 781,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 393,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 123,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 541,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 230,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 76,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 410,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 993,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 670,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 93,
+                "column": "avg_movie_duration_min",
+                "group": "Median/mode group",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 947,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 628,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 728,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 678,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 391,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 560,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 364,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 0,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 107,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 911,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 3,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 362,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 353,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 382,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 518,
+                "column": "genre_diversity_score",
+                "group": "Median/mode group",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 873,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 555,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 162,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 310,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 939,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 605,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 830,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 278,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 170,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 102,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 592,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 266,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 199,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 387,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 352,
+                "column": "weekend_watching_pct",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 971,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 316,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 857,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 654,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 812,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 447,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 999,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 115,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 559,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 461,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 290,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 167,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 643,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 87,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 598,
+                "column": "monthly_streaming_hours",
+                "group": "Mean-imputation group",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 983,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 111,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 898,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 685,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 644,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 101,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 979,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 627,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 342,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            },
+            {
+                "row_id": 844,
+                "column": "rewatch_percentage",
+                "group": "Additional missing cells",
+                "recommended_treatment": "Imputation based on distribution"
+            }
+        ]
+    },
+    "duplicates": {
+        "total_duplicate_instances": 6,
+        "details": [
+            {
+                "source_row": 204,
+                "copy_row": 298,
+                "viewer_id": 10867
+            },
+            {
+                "source_row": 97,
+                "copy_row": 600,
+                "viewer_id": 10247
+            },
+            {
+                "source_row": 672,
+                "copy_row": 395,
+                "viewer_id": 10890
+            },
+            {
+                "source_row": 875,
+                "copy_row": 476,
+                "viewer_id": 10533
+            },
+            {
+                "source_row": 748,
+                "copy_row": 326,
+                "viewer_id": 10964
+            },
+            {
+                "source_row": 24,
+                "copy_row": 553,
+                "viewer_id": 10576
+            }
+        ]
+    },
+    "outliers_invalid": {
+        "total_invalid_records": 28,
+        "details": [
+            {
+                "row_id": 90,
+                "column": "movies_watched_monthly",
+                "original_value": 5.0,
+                "planted_value": -5.0,
+                "reason": "Negative movie count",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 842,
+                "column": "weekend_watching_pct",
+                "original_value": 73.7,
+                "planted_value": 110.5,
+                "reason": "Percentage > 100",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 456,
+                "column": "rewatch_percentage",
+                "original_value": 0.0,
+                "planted_value": -15.0,
+                "reason": "Percentage < 0",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 801,
+                "column": "genre_diversity_score",
+                "original_value": 2.0,
+                "planted_value": 25.0,
+                "reason": "Impossible genre count (> 12)",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 237,
+                "column": "avg_rating_given",
+                "original_value": 3.2,
+                "planted_value": 6.5,
+                "reason": "Rating > 5",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 753,
+                "column": "monthly_streaming_hours",
+                "original_value": 68.6,
+                "planted_value": -10.0,
+                "reason": "Negative streaming hours",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 660,
+                "column": "movies_watched_monthly",
+                "original_value": 29.0,
+                "planted_value": -5.0,
+                "reason": "Negative movie count",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 921,
+                "column": "weekend_watching_pct",
+                "original_value": 38.6,
+                "planted_value": 110.5,
+                "reason": "Percentage > 100",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 508,
+                "column": "rewatch_percentage",
+                "original_value": 72.1,
+                "planted_value": -15.0,
+                "reason": "Percentage < 0",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 37,
+                "column": "genre_diversity_score",
+                "original_value": 4.0,
+                "planted_value": 25.0,
+                "reason": "Impossible genre count (> 12)",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 516,
+                "column": "avg_rating_given",
+                "original_value": 3.9,
+                "planted_value": 6.5,
+                "reason": "Rating > 5",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 424,
+                "column": "monthly_streaming_hours",
+                "original_value": 5.6,
+                "planted_value": -10.0,
+                "reason": "Negative streaming hours",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 537,
+                "column": "movies_watched_monthly",
+                "original_value": 5.0,
+                "planted_value": -5.0,
+                "reason": "Negative movie count",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 998,
+                "column": "weekend_watching_pct",
+                "original_value": 59.4,
+                "planted_value": 110.5,
+                "reason": "Percentage > 100",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 568,
+                "column": "rewatch_percentage",
+                "original_value": 84.0,
+                "planted_value": -15.0,
+                "reason": "Percentage < 0",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 174,
+                "column": "genre_diversity_score",
+                "original_value": 9.0,
+                "planted_value": 25.0,
+                "reason": "Impossible genre count (> 12)",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 400,
+                "column": "avg_rating_given",
+                "original_value": 3.7,
+                "planted_value": 6.5,
+                "reason": "Rating > 5",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 829,
+                "column": "monthly_streaming_hours",
+                "original_value": 39.6,
+                "planted_value": -10.0,
+                "reason": "Negative streaming hours",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 256,
+                "column": "movies_watched_monthly",
+                "original_value": 16.0,
+                "planted_value": -5.0,
+                "reason": "Negative movie count",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 394,
+                "column": "weekend_watching_pct",
+                "original_value": 25.8,
+                "planted_value": 110.5,
+                "reason": "Percentage > 100",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 381,
+                "column": "rewatch_percentage",
+                "original_value": 8.5,
+                "planted_value": -15.0,
+                "reason": "Percentage < 0",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 361,
+                "column": "genre_diversity_score",
+                "original_value": 11.0,
+                "planted_value": 25.0,
+                "reason": "Impossible genre count (> 12)",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 39,
+                "column": "avg_rating_given",
+                "original_value": 4.1,
+                "planted_value": 6.5,
+                "reason": "Rating > 5",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 88,
+                "column": "monthly_streaming_hours",
+                "original_value": 29.1,
+                "planted_value": -10.0,
+                "reason": "Negative streaming hours",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 740,
+                "column": "movies_watched_monthly",
+                "original_value": 39.0,
+                "planted_value": -5.0,
+                "reason": "Negative movie count",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 98,
+                "column": "weekend_watching_pct",
+                "original_value": 66.5,
+                "planted_value": 110.5,
+                "reason": "Percentage > 100",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 565,
+                "column": "rewatch_percentage",
+                "original_value": 0.2,
+                "planted_value": -15.0,
+                "reason": "Percentage < 0",
+                "recommended_treatment": "Remove or correct"
+            },
+            {
+                "row_id": 802,
+                "column": "genre_diversity_score",
+                "original_value": 10.0,
+                "planted_value": 25.0,
+                "reason": "Impossible genre count (> 12)",
+                "recommended_treatment": "Remove or correct"
+            }
+        ]
+    },
+    "outliers_valid_extremes": {
+        "total_valid_extremes": 22,
+        "details": [
+            {
+                "row_id": 321,
+                "column": "movies_watched_monthly",
+                "original_value": 16.0,
+                "planted_value": 39.0,
+                "reason": "Very frequent watcher, within upper range",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 38,
+                "column": "avg_movie_duration_min",
+                "original_value": 99.29529576878863,
+                "planted_value": 195.0,
+                "reason": "Unusually long average movies",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 132,
+                "column": "rewatch_percentage",
+                "original_value": 19.6,
+                "planted_value": 99.0,
+                "reason": "Very high rewatch percentage",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 876,
+                "column": "monthly_streaming_hours",
+                "original_value": 33.0,
+                "planted_value": 115.0,
+                "reason": "High but valid streaming hours",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 71,
+                "column": "movies_watched_monthly",
+                "original_value": 3.0,
+                "planted_value": 39.0,
+                "reason": "Very frequent watcher, within upper range",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 304,
+                "column": "avg_movie_duration_min",
+                "original_value": 106.309492846883,
+                "planted_value": 195.0,
+                "reason": "Unusually long average movies",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 586,
+                "column": "rewatch_percentage",
+                "original_value": 12.1,
+                "planted_value": 99.0,
+                "reason": "Very high rewatch percentage",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 13,
+                "column": "monthly_streaming_hours",
+                "original_value": 2.4,
+                "planted_value": 115.0,
+                "reason": "High but valid streaming hours",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 835,
+                "column": "movies_watched_monthly",
+                "original_value": 12.0,
+                "planted_value": 39.0,
+                "reason": "Very frequent watcher, within upper range",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 606,
+                "column": "avg_movie_duration_min",
+                "original_value": 70.75657423368449,
+                "planted_value": 195.0,
+                "reason": "Unusually long average movies",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 254,
+                "column": "rewatch_percentage",
+                "original_value": 18.2,
+                "planted_value": 99.0,
+                "reason": "Very high rewatch percentage",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 985,
+                "column": "monthly_streaming_hours",
+                "original_value": 54.2,
+                "planted_value": 115.0,
+                "reason": "High but valid streaming hours",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 604,
+                "column": "movies_watched_monthly",
+                "original_value": 5.0,
+                "planted_value": 39.0,
+                "reason": "Very frequent watcher, within upper range",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 988,
+                "column": "avg_movie_duration_min",
+                "original_value": 95.64319125658317,
+                "planted_value": 195.0,
+                "reason": "Unusually long average movies",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 454,
+                "column": "rewatch_percentage",
+                "original_value": 19.4,
+                "planted_value": 99.0,
+                "reason": "Very high rewatch percentage",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 546,
+                "column": "monthly_streaming_hours",
+                "original_value": 21.9,
+                "planted_value": 115.0,
+                "reason": "High but valid streaming hours",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 520,
+                "column": "movies_watched_monthly",
+                "original_value": 12.0,
+                "planted_value": 39.0,
+                "reason": "Very frequent watcher, within upper range",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 374,
+                "column": "avg_movie_duration_min",
+                "original_value": 94.17218837225487,
+                "planted_value": 195.0,
+                "reason": "Unusually long average movies",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 291,
+                "column": "rewatch_percentage",
+                "original_value": 8.7,
+                "planted_value": 99.0,
+                "reason": "Very high rewatch percentage",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 375,
+                "column": "monthly_streaming_hours",
+                "original_value": 8.6,
+                "planted_value": 115.0,
+                "reason": "High but valid streaming hours",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 858,
+                "column": "movies_watched_monthly",
+                "original_value": 22.0,
+                "planted_value": 39.0,
+                "reason": "Very frequent watcher, within upper range",
+                "recommended_treatment": "Keep - legitimate extreme"
+            },
+            {
+                "row_id": 846,
+                "column": "avg_movie_duration_min",
+                "original_value": 92.22896470787416,
+                "planted_value": 195.0,
+                "reason": "Unusually long average movies",
+                "recommended_treatment": "Keep - legitimate extreme"
+            }
+        ]
+    },
+    "feature_removal_exercises": {
+        "Easy": "viewer_id (unique identifier with no predictive meaning)",
+        "Moderate": "movies_watched_monthly and monthly_streaming_hours (meaningful positive relationship)",
+        "Harder": "avg_movie_duration_min (investigate whether duration adds distinct information beyond movie count and monthly streaming hours)"
+    },
+    "measured_feature_correlations": {
+        "viewer_id": {
+            "viewer_id": 1.0,
+            "movies_watched_monthly": 0.01798448284302731,
+            "avg_movie_duration_min": 0.01772176837111464,
+            "weekend_watching_pct": -0.04673468471708743,
+            "rewatch_percentage": 0.046997180148644103,
+            "genre_diversity_score": -0.010554324008770963,
+            "avg_rating_given": 0.01971418131354341,
+            "monthly_streaming_hours": 0.01655868139253704
+        },
+        "movies_watched_monthly": {
+            "viewer_id": 0.01798448284302731,
+            "movies_watched_monthly": 1.0,
+            "avg_movie_duration_min": 0.3214905789447867,
+            "weekend_watching_pct": -0.39556049813967303,
+            "rewatch_percentage": -0.0011148839300831577,
+            "genre_diversity_score": 0.43369245205614854,
+            "avg_rating_given": 0.2464495630650034,
+            "monthly_streaming_hours": 0.8591713008150136
+        },
+        "avg_movie_duration_min": {
+            "viewer_id": 0.01772176837111464,
+            "movies_watched_monthly": 0.3214905789447867,
+            "avg_movie_duration_min": 1.0,
+            "weekend_watching_pct": -0.18743605665599514,
+            "rewatch_percentage": -0.08204395205414425,
+            "genre_diversity_score": 0.27532729664925387,
+            "avg_rating_given": 0.07071842726383706,
+            "monthly_streaming_hours": 0.5162417693399162
+        },
+        "weekend_watching_pct": {
+            "viewer_id": -0.04673468471708743,
+            "movies_watched_monthly": -0.39556049813967303,
+            "avg_movie_duration_min": -0.18743605665599514,
+            "weekend_watching_pct": 1.0,
+            "rewatch_percentage": 0.09866678373669498,
+            "genre_diversity_score": -0.3546020883024432,
+            "avg_rating_given": -0.14881726368601703,
+            "monthly_streaming_hours": -0.3416139726839493
+        },
+        "rewatch_percentage": {
+            "viewer_id": 0.046997180148644103,
+            "movies_watched_monthly": -0.0011148839300831577,
+            "avg_movie_duration_min": -0.08204395205414425,
+            "weekend_watching_pct": 0.09866678373669498,
+            "rewatch_percentage": 1.0,
+            "genre_diversity_score": -0.585593076727979,
+            "avg_rating_given": 0.42037406411539757,
+            "monthly_streaming_hours": -0.0608925551480365
+        },
+        "genre_diversity_score": {
+            "viewer_id": -0.010554324008770963,
+            "movies_watched_monthly": 0.43369245205614854,
+            "avg_movie_duration_min": 0.27532729664925387,
+            "weekend_watching_pct": -0.3546020883024432,
+            "rewatch_percentage": -0.585593076727979,
+            "genre_diversity_score": 1.0,
+            "avg_rating_given": -0.03725704811069461,
+            "monthly_streaming_hours": 0.4238100640218482
+        },
+        "avg_rating_given": {
+            "viewer_id": 0.01971418131354341,
+            "movies_watched_monthly": 0.2464495630650034,
+            "avg_movie_duration_min": 0.07071842726383706,
+            "weekend_watching_pct": -0.14881726368601703,
+            "rewatch_percentage": 0.42037406411539757,
+            "genre_diversity_score": -0.03725704811069461,
+            "avg_rating_given": 1.0,
+            "monthly_streaming_hours": 0.2039571545106337
+        },
+        "monthly_streaming_hours": {
+            "viewer_id": 0.01655868139253704,
+            "movies_watched_monthly": 0.8591713008150136,
+            "avg_movie_duration_min": 0.5162417693399162,
+            "weekend_watching_pct": -0.3416139726839493,
+            "rewatch_percentage": -0.0608925551480365,
+            "genre_diversity_score": 0.4238100640218482,
+            "avg_rating_given": 0.2039571545106337,
+            "monthly_streaming_hours": 1.0
+        }
+    },
+    "clean_subset_used_for_correlations": "Rows containing any missing values or values outside valid realistic ranges (e.g., negative counts, invalid percentages) were dropped before computing correlations.",
+    "known_limitations": "Synthetic data generated with normal distributions and simplistic linear combinations. Real user behavior may exhibit more complex non-linear relationships and different underlying distributions."
+}

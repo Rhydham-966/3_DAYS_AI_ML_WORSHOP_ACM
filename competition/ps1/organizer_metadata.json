@@ -1,0 +1,1164 @@
+{
+    "DO_NOT_DISTRIBUTE": "This file contains private ground truth and planted data records. Do not distribute to participants.",
+    "generation_settings": {
+        "random_seed": 42,
+        "n_rows": 1000
+    },
+    "missing_data": {
+        "total_missing_cells": 100,
+        "details": [
+            {
+                "row_id": 507,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 507,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 779,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 779,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 431,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 431,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 996,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 996,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 268,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 268,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 662,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 662,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 0,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 0,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 208,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 208,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 872,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 872,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 3,
+                "column": "distance_km",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 3,
+                "column": "distance_miles",
+                "group": "A",
+                "recommended_treatment": "Row removal"
+            },
+            {
+                "row_id": 98,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 383,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 633,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 93,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 97,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 503,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 357,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 461,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 797,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 366,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 364,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 680,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 820,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 368,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 798,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 550,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 132,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 282,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 541,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 808,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 675,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 324,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 87,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 927,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 947,
+                "column": "courier_experience_years",
+                "group": "B",
+                "recommended_treatment": "Median imputation"
+            },
+            {
+                "row_id": 799,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 378,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 180,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 84,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 660,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 232,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 780,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 372,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 101,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 39,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 944,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 810,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 504,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 230,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 407,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 565,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 628,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 685,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 399,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 323,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 785,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 540,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 403,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 318,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 393,
+                "column": "order_items",
+                "group": "C",
+                "recommended_treatment": "Mode imputation"
+            },
+            {
+                "row_id": 417,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 580,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 416,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 647,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 732,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 224,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 594,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 619,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 823,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 19,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 911,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 653,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 199,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 795,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 290,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 688,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 48,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 517,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 413,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 694,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 838,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 256,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 713,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 672,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 375,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 534,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 432,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 856,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 758,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            },
+            {
+                "row_id": 231,
+                "column": "traffic_delay_min",
+                "group": "D",
+                "recommended_treatment": "Mean imputation"
+            }
+        ]
+    },
+    "duplicates": {
+        "total_duplicate_instances": 6,
+        "details": [
+            {
+                "source_row": 864,
+                "copy_row": 354,
+                "order_id": 100391
+            },
+            {
+                "source_row": 273,
+                "copy_row": 37,
+                "order_id": 100250
+            },
+            {
+                "source_row": 622,
+                "copy_row": 690,
+                "order_id": 100851
+            },
+            {
+                "source_row": 71,
+                "copy_row": 621,
+                "order_id": 100493
+            },
+            {
+                "source_row": 138,
+                "copy_row": 441,
+                "order_id": 100025
+            },
+            {
+                "source_row": 566,
+                "copy_row": 420,
+                "order_id": 100675
+            }
+        ]
+    },
+    "outliers_invalid": {
+        "total_invalid_records": 28,
+        "details": [
+            {
+                "row_id": 38,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": -2.5,
+                "reason": "Negative distance",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 228,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": -10.0,
+                "reason": "Negative preparation time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 283,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": -5.0,
+                "reason": "Negative traffic delay",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 501,
+                "column": "order_items",
+                "original_value": "various",
+                "planted_value": 0,
+                "reason": "Zero order items",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 546,
+                "column": "courier_experience_years",
+                "original_value": "various",
+                "planted_value": -2.0,
+                "reason": "Negative experience",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 924,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": -3.0,
+                "reason": "Negative wait time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 599,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": -2.5,
+                "reason": "Negative distance",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 480,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": -10.0,
+                "reason": "Negative preparation time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 484,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": -5.0,
+                "reason": "Negative traffic delay",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 491,
+                "column": "order_items",
+                "original_value": "various",
+                "planted_value": 0,
+                "reason": "Zero order items",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 291,
+                "column": "courier_experience_years",
+                "original_value": "various",
+                "planted_value": -2.0,
+                "reason": "Negative experience",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 88,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": -3.0,
+                "reason": "Negative wait time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 977,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": -2.5,
+                "reason": "Negative distance",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 120,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": -10.0,
+                "reason": "Negative preparation time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 24,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": -5.0,
+                "reason": "Negative traffic delay",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 773,
+                "column": "order_items",
+                "original_value": "various",
+                "planted_value": 0,
+                "reason": "Zero order items",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 590,
+                "column": "courier_experience_years",
+                "original_value": "various",
+                "planted_value": -2.0,
+                "reason": "Negative experience",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 837,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": -3.0,
+                "reason": "Negative wait time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 586,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": -2.5,
+                "reason": "Negative distance",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 740,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": -10.0,
+                "reason": "Negative preparation time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 102,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": -5.0,
+                "reason": "Negative traffic delay",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 972,
+                "column": "order_items",
+                "original_value": "various",
+                "planted_value": 0,
+                "reason": "Zero order items",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 123,
+                "column": "courier_experience_years",
+                "original_value": "various",
+                "planted_value": -2.0,
+                "reason": "Negative experience",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 236,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": -3.0,
+                "reason": "Negative wait time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 111,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": -2.5,
+                "reason": "Negative distance",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 692,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": -10.0,
+                "reason": "Negative preparation time",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 997,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": -5.0,
+                "reason": "Negative traffic delay",
+                "recommended_treatment": "Remove"
+            },
+            {
+                "row_id": 583,
+                "column": "order_items",
+                "original_value": "various",
+                "planted_value": 0,
+                "reason": "Zero order items",
+                "recommended_treatment": "Remove"
+            }
+        ]
+    },
+    "outliers_valid_extremes": {
+        "total_valid_extremes": 22,
+        "details": [
+            {
+                "row_id": 149,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": 22.0,
+                "reason": "Very long delivery distance (valid)",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 395,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": 45.0,
+                "reason": "Large valid prep time for big order",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 53,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": 40.0,
+                "reason": "Severe but valid traffic delay",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 577,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": 25.0,
+                "reason": "Unusually long wait time at restaurant",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 167,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": 22.0,
+                "reason": "Very long delivery distance (valid)",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 437,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": 45.0,
+                "reason": "Large valid prep time for big order",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 571,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": 40.0,
+                "reason": "Severe but valid traffic delay",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 454,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": 25.0,
+                "reason": "Unusually long wait time at restaurant",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 655,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": 22.0,
+                "reason": "Very long delivery distance (valid)",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 777,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": 45.0,
+                "reason": "Large valid prep time for big order",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 562,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": 40.0,
+                "reason": "Severe but valid traffic delay",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 807,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": 25.0,
+                "reason": "Unusually long wait time at restaurant",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 279,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": 22.0,
+                "reason": "Very long delivery distance (valid)",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 238,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": 45.0,
+                "reason": "Large valid prep time for big order",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 284,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": 40.0,
+                "reason": "Severe but valid traffic delay",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 90,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": 25.0,
+                "reason": "Unusually long wait time at restaurant",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 706,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": 22.0,
+                "reason": "Very long delivery distance (valid)",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 266,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": 45.0,
+                "reason": "Large valid prep time for big order",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 656,
+                "column": "traffic_delay_min",
+                "original_value": "various",
+                "planted_value": 40.0,
+                "reason": "Severe but valid traffic delay",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 174,
+                "column": "courier_wait_min",
+                "original_value": "various",
+                "planted_value": 25.0,
+                "reason": "Unusually long wait time at restaurant",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 278,
+                "column": "distance_km",
+                "original_value": "various",
+                "planted_value": 22.0,
+                "reason": "Very long delivery distance (valid)",
+                "recommended_treatment": "Keep"
+            },
+            {
+                "row_id": 796,
+                "column": "prep_time_min",
+                "original_value": "various",
+                "planted_value": 45.0,
+                "reason": "Large valid prep time for big order",
+                "recommended_treatment": "Keep"
+            }
+        ]
+    },
+    "feature_removal_exercises": {
+        "Easy": "order_id (identifier with no predictive value)",
+        "Moderate": "distance_miles (direct conversion of distance_km, completely redundant)",
+        "Harder": "order_items (positively correlated with prep_time_min, investigate if it adds unique signal)"
+    },
+    "measured_feature_correlations": {
+        "order_id": {
+            "order_id": 1.0,
+            "distance_km": 0.0019004570680851353,
+            "distance_miles": 0.0019313511076890304,
+            "prep_time_min": 0.0029132145008901916,
+            "courier_experience_years": 0.006204311038969199,
+            "order_items": 0.006064523990647985,
+            "traffic_delay_min": 0.006828977461506094,
+            "courier_wait_min": -0.05575674896844673,
+            "delivery_time_min": -0.017766037326737958
+        },
+        "distance_km": {
+            "order_id": 0.0019004570680851353,
+            "distance_km": 1.0,
+            "distance_miles": 0.999999121379363,
+            "prep_time_min": -0.043863074499634024,
+            "courier_experience_years": -0.052766990706392174,
+            "order_items": -0.06688609618706504,
+            "traffic_delay_min": -0.009472346259766867,
+            "courier_wait_min": 0.014119335717285764,
+            "delivery_time_min": 0.5383673585501465
+        },
+        "distance_miles": {
+            "order_id": 0.0019313511076890304,
+            "distance_km": 0.999999121379363,
+            "distance_miles": 1.0,
+            "prep_time_min": -0.04390442788532565,
+            "courier_experience_years": -0.05275081265183987,
+            "order_items": -0.06692221008168794,
+            "traffic_delay_min": -0.009575260189957881,
+            "courier_wait_min": 0.014066008049160198,
+            "delivery_time_min": 0.5382777607971999
+        },
+        "prep_time_min": {
+            "order_id": 0.0029132145008901916,
+            "distance_km": -0.043863074499634024,
+            "distance_miles": -0.04390442788532565,
+            "prep_time_min": 1.0,
+            "courier_experience_years": 0.028262550978334643,
+            "order_items": 0.9198673189566671,
+            "traffic_delay_min": 0.08801190892618782,
+            "courier_wait_min": 0.007122927277315588,
+            "delivery_time_min": 0.5785696699076115
+        },
+        "courier_experience_years": {
+            "order_id": 0.006204311038969199,
+            "distance_km": -0.052766990706392174,
+            "distance_miles": -0.05275081265183987,
+            "prep_time_min": 0.028262550978334643,
+            "courier_experience_years": 1.0,
+            "order_items": 0.037137755214121625,
+            "traffic_delay_min": -0.005500513525912784,
+            "courier_wait_min": -0.006094864797348252,
+            "delivery_time_min": -0.05866075312480802
+        },
+        "order_items": {
+            "order_id": 0.006064523990647985,
+            "distance_km": -0.06688609618706504,
+            "distance_miles": -0.06692221008168794,
+            "prep_time_min": 0.9198673189566671,
+            "courier_experience_years": 0.037137755214121625,
+            "order_items": 1.0,
+            "traffic_delay_min": 0.09541530139848584,
+            "courier_wait_min": 0.01640773730399354,
+            "delivery_time_min": 0.5246338383355559
+        },
+        "traffic_delay_min": {
+            "order_id": 0.006828977461506094,
+            "distance_km": -0.009472346259766867,
+            "distance_miles": -0.009575260189957881,
+            "prep_time_min": 0.08801190892618782,
+            "courier_experience_years": -0.005500513525912784,
+            "order_items": 0.09541530139848584,
+            "traffic_delay_min": 1.0,
+            "courier_wait_min": 0.005923761639092253,
+            "delivery_time_min": 0.5002190243033432
+        },
+        "courier_wait_min": {
+            "order_id": -0.05575674896844673,
+            "distance_km": 0.014119335717285764,
+            "distance_miles": 0.014066008049160198,
+            "prep_time_min": 0.007122927277315588,
+            "courier_experience_years": -0.006094864797348252,
+            "order_items": 0.01640773730399354,
+            "traffic_delay_min": 0.005923761639092253,
+            "courier_wait_min": 1.0,
+            "delivery_time_min": 0.28020358133749684
+        },
+        "delivery_time_min": {
+            "order_id": -0.017766037326737958,
+            "distance_km": 0.5383673585501465,
+            "distance_miles": 0.5382777607971999,
+            "prep_time_min": 0.5785696699076115,
+            "courier_experience_years": -0.05866075312480802,
+            "order_items": 0.5246338383355559,
+            "traffic_delay_min": 0.5002190243033432,
+            "courier_wait_min": 0.28020358133749684,
+            "delivery_time_min": 1.0
+        }
+    },
+    "clean_subset_used_for_correlations": "Dropped rows with any missing values or values violating ordinary physical limits (e.g., negative time)."
+}
