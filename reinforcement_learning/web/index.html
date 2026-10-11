@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- The page you see in the browser. app.js fills it in with what Python sends. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivery Robot</title>
+  <!-- The colours and layout are in style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- TOP BAR: the title, the Game / Move / Curiosity numbers, which pieces work, and Reload -->
+  <header class="topbar">
+    <h1>Delivery robot</h1>
+    <dl class="counters">
+      <div><dt>Game</dt><dd id="game-number">1</dd></div>
+      <div><dt>Move</dt><dd id="move-number">0 of 150</dd></div>
+      <div><dt>Curiosity</dt><dd id="curiosity">100%</dd></div>
+    </dl>
+    <ul class="pieces" id="pieces" aria-label="Your code"></ul>
+    <button id="reload" type="button">Reload my code</button>
+  </header>
+
+  <!-- MESSAGE BOX: says what to do next, e.g. "Next: Piece 2" (hidden when all is well) -->
+  <div id="notice" class="notice" role="status" hidden>
+    <strong id="notice-title"></strong>
+    <p id="notice-text"></p>
+  </div>
+
+  <!-- BUTTONS -->
+  <nav class="controls" aria-label="Controls">
+    <!-- Watch the robot: a whole game, or one move at a time -->
+    <div class="control-group">
+      <button id="play" type="button" class="primary">Play one game</button>
+      <button id="step" type="button">Step</button>
+      <label class="speed">Speed
+        <input id="speed" type="range" min="1" max="40" value="5">
+        <output id="speed-value">5 moves a second</output>
+      </label>
+    </div>
+    <!-- Practise fast, test without curiosity, or forget everything -->
+    <div class="control-group">
+      <button id="train10" type="button">Train 10 games</button>
+      <button id="train100" type="button">Train 100 games</button>
+      <button id="test" type="button">Test what it learned</button>
+      <button id="reset" type="button" class="quiet">Reset brain</button>
+    </div>
+  </nav>
+
+  <main class="layout">
+    <!-- 1. THE WAREHOUSE: the floor, the robot, its battery and this game's numbers -->
+    <section class="panel floor-panel" aria-labelledby="floor-heading">
+      <h2 id="floor-heading">Warehouse</h2>
+      <div class="floor-frame">
+        <!-- A-F along the top, 1-6 down the side -->
+        <div class="axis axis-top" id="axis-top" aria-hidden="true"></div>
+        <div class="axis axis-left" id="axis-left" aria-hidden="true"></div>
+        <!-- The 36 squares are added by app.js. The robot slides on top of them. -->
+        <div class="floor" id="floor">
+          <div class="robot" id="robot" aria-label="The robot">
+            <span class="robot-face" aria-hidden="true">🤖</span>
+            <span class="robot-parcel" aria-hidden="true">📦</span>
+            <span class="robot-battery"><span id="robot-battery-fill"></span></span>
+          </div>
+          <!-- Floating labels like "+10 picked up" appear here -->
+          <div class="pops" id="pops" aria-hidden="true"></div>
+        </div>
+      </div>
+      <!-- The battery bar -->
+      <div class="battery-gauge">
+        <span class="gauge-label">Battery</span>
+        <span class="gauge-track"><span class="gauge-fill" id="gauge-fill"></span></span>
+        <span class="gauge-text" id="gauge-text">30 of 30</span>
+      </div>
+      <!-- How it is using its resources in this game -->
+      <dl class="game-stats">
+        <div><dt>Deliveries</dt><dd id="stat-deliveries">0</dd></div>
+        <div><dt>Battery used</dt><dd id="stat-battery">0</dd></div>
+        <div><dt>Charges</dt><dd id="stat-charges">0</dd></div>
+        <div><dt>Bumps</dt><dd id="stat-bumps">0</dd></div>
+      </dl>
+      <p class="legend"><span>📦 pickup</span><span>🏠 customer</span><span>⚡ charger</span><span><i class="legend-shelf"></i> shelf</span></p>
+    </section>
+
+    <!-- 2. ROBOT'S MIND: the 5 steps of every move -->
+    <section class="panel mind-panel" aria-labelledby="mind-heading">
+      <h2 id="mind-heading">Robot's mind</h2>
+      <ol class="mind" id="mind">
+        <li><h3>See</h3><div id="mind-see" class="mind-body"></div></li>        <!-- its situation -->
+        <li><h3>Think</h3><div id="mind-think" class="mind-body"></div></li>    <!-- its 4 scores -->
+        <li><h3>Do</h3><div id="mind-do" class="mind-body"></div></li>          <!-- the move it chose -->
+        <li><h3>Result</h3><div id="mind-result" class="mind-body"></div></li>  <!-- points and battery -->
+        <li><h3>Adjust</h3><div id="mind-adjust" class="mind-body"></div></li>  <!-- how it changed its mind -->
+      </ol>
+    </section>
+
+    <!-- 3. LOG: one line per move, newest at the top -->
+    <section class="panel log-panel" aria-labelledby="log-heading">
+      <h2 id="log-heading">Log</h2>
+      <p class="hint">Newest at the top. Every line is one move: where it was, what it chose, the points, and how it changed its mind.</p>
+      <ol class="log" id="log"></ol>
+    </section>
+
+    <!-- 4. BRAIN: 6 small maps showing the best move on every square (filled in by app.js) -->
+    <section class="panel brain-panel" aria-labelledby="brain-heading">
+      <h2 id="brain-heading">Brain</h2>
+      <p class="hint">The robot's best move on every square, for each situation it can be in. Green means it expects good things, red means trouble. A square flashes when the robot changes its mind about it.</p>
+      <div class="brain" id="brain"></div>
+    </section>
+
+    <!-- 5. PROGRESS: two charts that show it getting better over many games -->
+    <section class="panel progress-panel" aria-labelledby="progress-heading">
+      <h2 id="progress-heading">Progress</h2>
+      <figure>
+        <figcaption>Deliveries per game <span class="key-dead">red tick = battery ran out</span></figcaption>
+        <canvas id="chart-deliveries" height="150"></canvas>
+      </figure>
+      <figure>
+        <figcaption>Battery used per delivery (lower is better)</figcaption>
+        <canvas id="chart-battery" height="150"></canvas>
+      </figure>
+      <p class="progress-summary" id="progress-summary"></p>
+    </section>
+  </main>
+
+  <!-- The code that talks to Python and draws everything -->
+  <script src="app.js"></script>
+</body>
+</html>

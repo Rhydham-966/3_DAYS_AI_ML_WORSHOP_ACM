@@ -1,0 +1,408 @@
+/* Delivery robot: how the page looks (colours, sizes, layout).
+   Colours: concrete floor, steel shelves, safety-yellow floor tape, cardboard parcels. */
+
+/* The colours and fonts, given names so the rest of the file can use them. */
+:root {
+  --page: #eceee9;
+  --panel: #f8f8f5;
+  --floor: #d5d8d1;
+  --floor-line: #c4c8c0;
+  --ink: #1c2b33;
+  --ink-soft: #55656e;
+  --line: #cfd3cc;
+  --steel: #36464f;
+  --tape: #f2b705;
+  --tape-soft: #fbe7a1;
+  --cardboard: #b37b45;
+  --charge: #0f8577;
+  --good: #2d8a4e;
+  --bad: #c2372c;
+  --sign: "Bahnschrift", "DIN Alternate", "DIN 2014", "Barlow Semi Condensed", "Arial Narrow", sans-serif;
+  --text: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  --move-ms: 200ms;
+}
+
+/* Sizes include the border and padding (easier to line things up). */
+* { box-sizing: border-box; }
+
+/* The whole page. */
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 15px/1.45 var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Headings and buttons use the warehouse-sign font. */
+h1, h2, h3, button, dt, .gauge-label, .speed { font-family: var(--sign); }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 0 0 0.6rem; letter-spacing: 0.01em; }
+h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+.hint { color: var(--ink-soft); font-size: 0.85rem; margin: -0.3rem 0 0.8rem; max-width: 70ch; }
+
+/* Buttons: white with a dark border. Grey and see-through when switched off. */
+button {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--ink);
+  cursor: pointer;
+}
+button:hover:not(:disabled) { background: var(--tape-soft); }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+button.primary { background: var(--ink); color: #fff; }
+button.primary:hover:not(:disabled) { background: #2c4350; }
+button.quiet { border-color: transparent; background: transparent; text-decoration: underline; }
+:focus-visible { outline: 3px solid var(--tape); outline-offset: 2px; }
+
+/* ------------------------------------------------------------- top bar */
+/* Dark bar at the top, with a yellow-and-black hazard stripe underneath. */
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.75rem;
+  padding: 0.8rem 1.25rem 1rem;
+  background: var(--ink);
+  color: #fff;
+  border-bottom: 8px solid transparent;
+  border-image: repeating-linear-gradient(-45deg, var(--tape) 0 12px, var(--ink) 12px 24px) 8;
+}
+.topbar h1 { margin: 0; font-size: 1.6rem; font-weight: 700; }
+.counters { display: flex; gap: 1.5rem; margin: 0; }
+.counters div { display: flex; flex-direction: column; }
+.counters dt { font-size: 0.75rem; color: #a9b8bf; }
+.counters dd { margin: 0; font-size: 1.15rem; font-weight: 600; }
+/* The "Piece 1 ✓" labels: green when the piece works. */
+.pieces { display: flex; gap: 0.4rem; list-style: none; margin: 0 0 0 auto; padding: 0; }
+.pieces li {
+  font: 600 0.85rem var(--sign);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1.5px solid #6d7f88;
+  color: #c6d2d7;
+}
+.pieces li.ok { background: var(--good); border-color: var(--good); color: #fff; }
+.topbar #reload { background: transparent; color: #fff; border-color: #6d7f88; }
+.topbar #reload:hover { background: #2c4350; }
+
+/* ------------------------------------------------------------- notice */
+/* The message box: yellow for "what to do next", red for problems. */
+.notice {
+  margin: 1rem 1.25rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--tape-soft);
+  border-left: 6px solid var(--tape);
+  border-radius: 4px;
+}
+.notice.error { background: #f6d9d6; border-left-color: var(--bad); }
+.notice p { margin: 0.2rem 0 0; }
+
+/* ------------------------------------------------------------- controls */
+/* The row of buttons and the speed slider. */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding: 1rem 1.25rem 0;
+}
+.control-group { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.speed { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; margin-left: 0.5rem; }
+.speed output { font: 0.85rem var(--text); color: var(--ink-soft); min-width: 8.5em; }
+
+/* ------------------------------------------------------------- layout */
+/* Big screen: 3 columns (warehouse, mind, log), then brain and progress underneath. */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(330px, 1.05fr) minmax(300px, 1fr) minmax(300px, 1fr);
+  grid-template-areas:
+    "floor mind log"
+    "brain brain progress";
+  gap: 1rem;
+  padding: 1rem 1.25rem 2rem;
+}
+/* Each section sits on a light card. */
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1rem; min-width: 0; }
+.floor-panel { grid-area: floor; }
+.mind-panel { grid-area: mind; }
+.log-panel { grid-area: log; display: flex; flex-direction: column; }
+.brain-panel { grid-area: brain; }
+.progress-panel { grid-area: progress; }
+
+/* Medium screen (tablet, small laptop): 2 columns. */
+@media (max-width: 1180px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "floor mind" "brain brain" "progress log";
+  }
+}
+/* Phone: everything in 1 column. */
+@media (max-width: 760px) {
+  .layout { grid-template-columns: 1fr; grid-template-areas: "floor" "mind" "log" "brain" "progress"; padding: 1rem; }
+  .topbar, .controls { padding-left: 1rem; padding-right: 1rem; }
+  .pieces { margin-left: 0; }
+  .brain > :first-child { display: none; }
+  .brain .row-head { grid-column: 1 / -1; margin-top: 0.4rem; }
+  .brain .col-head { font-size: 0.8rem; }
+}
+
+/* ------------------------------------------------------------- warehouse floor */
+/* The floor is a 6 x 6 grid of squares, with A-F on top and 1-6 on the left. */
+.floor-frame {
+  display: grid;
+  grid-template-columns: 1.4rem 1fr;
+  grid-template-rows: 1.4rem auto;
+  max-width: 460px;
+}
+.axis { display: grid; font: 600 0.8rem var(--sign); color: var(--ink-soft); }
+.axis-top { grid-column: 2; grid-template-columns: repeat(6, 1fr); text-align: center; }
+.axis-left { grid-column: 1; grid-row: 2; grid-template-rows: repeat(6, 1fr); align-items: center; }
+
+.floor {
+  position: relative;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  aspect-ratio: 1;
+  background: var(--floor);
+  border: 3px solid var(--steel);
+  border-radius: 4px;
+}
+/* One square of the floor. */
+.cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 0.5px var(--floor-line);
+  font-size: clamp(1rem, 3.4vw, 1.6rem);
+}
+.cell small { font: 600 0.62rem var(--sign); color: var(--ink-soft); margin-top: 0.1rem; }
+.cell::after { /* trail: where the robot drove recently */
+  content: "";
+  position: absolute;
+  width: 22%;
+  height: 22%;
+  border-radius: 50%;
+  background: var(--tape);
+  opacity: var(--trail, 0);
+}
+/* Shelves: dark steel with brown boxes on them. */
+.cell.shelf {
+  background:
+    repeating-linear-gradient(90deg, transparent 0 18%, rgba(179, 123, 69, 0.85) 18% 40%, transparent 40% 58%, rgba(179, 123, 69, 0.7) 58% 82%, transparent 82%) center / 100% 34% no-repeat,
+    var(--steel);
+}
+/* Pickup and customer squares get dashed yellow tape. The charger is teal. */
+.cell.pickup, .cell.dropoff { outline: 3px dashed var(--tape); outline-offset: -6px; }
+.cell.charger { background: #b4d0c8; }
+.cell.pickup.empty .icon { opacity: 0.25; }
+
+/* The robot sits on top of the floor. --row and --col (set by app.js) slide it to its square. */
+.robot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% / 6);
+  height: calc(100% / 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(calc(var(--col, 0) * 100%), calc(var(--row, 0) * 100%));
+  transition: transform var(--move-ms) ease-out;
+  z-index: 2;
+  pointer-events: none;
+}
+/* The robot's yellow body. */
+.robot-face {
+  display: grid;
+  place-items: center;
+  width: 70%;
+  height: 56%;
+  background: var(--tape);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  font-size: clamp(0.9rem, 3vw, 1.4rem);
+}
+/* A parcel on the robot, only shown while it carries one. Its small battery bar below. */
+.robot-parcel { position: absolute; top: 6%; right: 4%; font-size: clamp(0.7rem, 2.2vw, 1rem); display: none; }
+.robot.carrying .robot-parcel { display: block; }
+.robot-battery { display: block; width: 70%; height: 10%; margin-top: 6%; background: #fff; border: 1.5px solid var(--ink); border-radius: 3px; overflow: hidden; }
+.robot-battery span { display: block; height: 100%; background: var(--good); transition: width var(--move-ms); }
+.robot.dead .robot-face { background: #9aa4a8; }
+
+/* Floating labels like "+10 picked up": they rise and fade away. */
+.pops { position: absolute; inset: 0; pointer-events: none; z-index: 3; }
+.pop {
+  position: absolute;
+  width: calc(100% / 6);
+  text-align: center;
+  font: 700 0.85rem var(--sign);
+  color: var(--ink);
+  animation: rise 1.1s ease-out forwards;
+  white-space: nowrap;
+}
+.pop span { background: #fff; border: 1.5px solid currentColor; border-radius: 4px; padding: 0 0.3rem; }
+.pop.good { color: var(--good); }
+.pop.bad { color: var(--bad); }
+.pop.charge { color: var(--charge); }
+@keyframes rise { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-140%); opacity: 0; } }
+
+/* The battery bar under the warehouse: green, then yellow, then red as it runs down. */
+.battery-gauge { display: flex; align-items: center; gap: 0.6rem; margin: 0.9rem 0 0.4rem; max-width: 460px; }
+.gauge-label { font-weight: 600; }
+.gauge-track { flex: 1; height: 14px; border: 2px solid var(--ink); border-radius: 4px; background: #fff; overflow: hidden; }
+.gauge-fill { display: block; height: 100%; width: 100%; background: var(--good); transition: width var(--move-ms); }
+.gauge-fill.medium, .robot-battery span.medium { background: var(--tape); }
+.gauge-fill.low, .robot-battery span.low { background: var(--bad); }
+.gauge-text { font-size: 0.85rem; min-width: 9.5em; }
+
+/* Deliveries, battery used, charges and bumps for this game. */
+.game-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin: 0.6rem 0; max-width: 460px; }
+.game-stats dt { font-size: 0.75rem; color: var(--ink-soft); }
+.game-stats dd { margin: 0; font-size: 1.2rem; font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.8rem; color: var(--ink-soft); margin: 0.4rem 0 0; }
+.legend-shelf { display: inline-block; width: 0.8em; height: 0.8em; background: var(--steel); vertical-align: -0.05em; border-radius: 2px; }
+
+/* ------------------------------------------------------------- robot's mind */
+/* The 5 steps (see, think, do, result, adjust), each with a numbered dark circle. */
+.mind { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+.mind > li {
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 1.9rem 1fr;
+  column-gap: 0.6rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.mind > li:last-child { border-bottom: 0; }
+.mind > li::before {
+  content: counter(step);
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font: 700 0.9rem var(--sign);
+}
+.mind-body { font-size: 0.92rem; min-height: 1.4em; }
+.mind-body p { margin: 0.1rem 0; }
+.muted { color: var(--ink-soft); }
+/* The small "Curious" (yellow) and "Confident" (dark) labels. */
+.tag {
+  display: inline-block;
+  font: 700 0.75rem var(--sign);
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  margin-left: 0.3rem;
+  vertical-align: 0.1em;
+}
+.tag.curious { background: var(--tape); color: var(--ink); }
+.tag.confident { background: var(--ink); color: #fff; }
+
+/* The score bars in the THINK step: green to the right of the middle line, red to the left. */
+.bars { display: grid; grid-template-columns: 1.3rem 3.2rem 1fr 3.4rem; align-items: center; gap: 0.15rem 0.4rem; margin-top: 0.2rem; }
+.bars .arrow { font-weight: 700; text-align: center; }
+.bars .name { font-size: 0.85rem; }
+.bars .value { text-align: right; font-size: 0.85rem; }
+.bar-track { position: relative; height: 12px; background: #eceee9; border-radius: 3px; }
+.bar-track::before { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--ink-soft); }
+.bar { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
+.bar.pos { left: 50%; background: var(--good); }
+.bar.neg { right: 50%; background: var(--bad); }
+.bars .chosen { font-weight: 700; }
+.bars .arrow.chosen { background: var(--tape); border-radius: 4px; }
+
+/* The learning formula in the ADJUST step. */
+.formula { font-size: 0.85rem; background: #eceee9; border-radius: 4px; padding: 0.3rem 0.5rem; margin: 0.25rem 0; overflow-x: auto; white-space: nowrap; }
+.better { color: var(--good); font-weight: 600; }
+.worse { color: var(--bad); font-weight: 600; }
+
+/* ------------------------------------------------------------- log */
+/* One line per move. Game summaries are yellow (red if the battery ran out). */
+.log { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; min-height: 240px; max-height: 640px; font-size: 0.84rem; }
+.entry {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto;
+  gap: 0 0.5rem;
+  padding: 0.35rem 0.2rem;
+  border-bottom: 1px solid var(--line);
+}
+.entry .n { color: var(--ink-soft); font-weight: 600; grid-row: span 2; }
+.entry .pts { text-align: right; font-weight: 600; }
+.entry .change { grid-column: 2 / 4; color: var(--ink-soft); }
+.entry.up .change b { color: var(--good); }
+.entry.down .change b { color: var(--bad); }
+.entry.summary {
+  display: block;
+  background: var(--tape-soft);
+  border-left: 4px solid var(--tape);
+  padding: 0.45rem 0.6rem;
+  margin: 0.3rem 0;
+  font-size: 0.86rem;
+}
+.entry.summary.died { background: #f6d9d6; border-left-color: var(--bad); }
+.entry.note { display: block; color: var(--ink-soft); font-style: italic; }
+
+/* ------------------------------------------------------------- brain maps */
+/* 6 small maps. The one for the robot's current situation gets a yellow outline. */
+.brain { display: grid; grid-template-columns: 7.5rem repeat(3, minmax(0, 190px)); gap: 0.6rem 0.9rem; align-items: center; }
+.brain .col-head { font: 600 0.9rem var(--sign); text-align: center; }
+.brain .row-head { font: 600 0.9rem var(--sign); }
+.mini {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  aspect-ratio: 1;
+  border: 2px solid var(--steel);
+  border-radius: 4px;
+  background: var(--floor);
+}
+.mini.active { outline: 4px solid var(--tape); outline-offset: 2px; }
+/* One square of a small map: shows an arrow for the best move. */
+.mini-cell {
+  display: grid;
+  place-items: center;
+  font: 700 clamp(0.7rem, 1.6vw, 1.05rem) var(--sign);
+  box-shadow: inset 0 0 0 0.5px var(--floor-line);
+  color: var(--ink);
+  position: relative;
+}
+.mini-cell.shelf { background: var(--steel); }
+.mini-cell.mark-pickup, .mini-cell.mark-dropoff { box-shadow: inset 0 0 0 2px var(--tape); }
+.mini-cell.mark-charger { box-shadow: inset 0 0 0 2px var(--charge); }
+.mini-cell.here::after { content: ""; position: absolute; inset: 22%; border-radius: 50%; border: 2.5px solid var(--ink); }
+/* A square flashes yellow when the robot changes its mind about it. */
+.mini-cell.flash { animation: flash 0.9s ease-out; }
+@keyframes flash { from { box-shadow: inset 0 0 0 3px var(--tape), 0 0 0 3px var(--tape); } to { box-shadow: inset 0 0 0 0.5px var(--floor-line); } }
+
+/* ------------------------------------------------------------- progress */
+/* The two charts. */
+figure { margin: 0 0 0.9rem; }
+figcaption { font: 600 0.9rem var(--sign); margin-bottom: 0.3rem; display: flex; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; }
+.key-dead { font: 0.75rem var(--text); color: var(--bad); }
+canvas { display: block; width: 100%; height: 150px; background: #fff; border: 1px solid var(--line); border-radius: 4px; }
+.progress-summary { font-size: 0.9rem; margin: 0; }
+
+/* If the computer is set to "reduce motion", switch off the sliding and floating. */
+@media (prefers-reduced-motion: reduce) {
+  .robot, .robot-battery span, .gauge-fill { transition: none; }
+  .pop { animation-duration: 0.01s; }
+  .mini-cell.flash { animation: none; outline: 2px solid var(--tape); }
+}
+
+/* phone: placed last so it wins over the desktop .brain grid above */
+@media (max-width: 760px) {
+  .brain { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem 0.5rem; }
+}
